@@ -13,3 +13,11 @@
 - - align-items: center;
 - - align-items: flex-start ( from top to bottom )
 - - align-items: flex-end ( from bottom to top)
+# Flex Axes and Properties
+- Main axes means changings in a horizontal.
+- Cross axes means changings in vertical.
+- Changings by __flex-direction__:
+- - flex-direction: row ( means that items are positioned from left to right) - horizontally changings
+- - flex-direction: row-reverse ( means the same as a roe but items are from right to left ) - horizontally changings
+- - flex-direction: column ( means that items are positioned from top to bottom ) -vertical changings
+- - flex-direction: column (means the same but from bottom to top)- vertical changings
