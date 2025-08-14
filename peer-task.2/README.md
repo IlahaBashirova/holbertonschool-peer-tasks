@@ -21,3 +21,12 @@
 - - flex-direction: row-reverse ( means the same as a roe but items are from right to left ) - horizontally changings
 - - flex-direction: column ( means that items are positioned from top to bottom ) -vertical changings
 - - flex-direction: column (means the same but from bottom to top)- vertical changings
+#  Flex Container vs. Flex Items
+- Flex-container properties:
+- - justify-content:
+- - align-items: 
+- - flex-direction: 
+- Flex-items properties:
+- - flex-shrink:
+- - align-self:
+- - flex-basis:
