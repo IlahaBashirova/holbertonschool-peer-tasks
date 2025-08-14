@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content:center;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px  
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+}
+.box-2 {
+    display: flex;
+    flex-direction: column;
+}
+.box-3 {
+    display: flex;
+    flex-direction: column;
+}
+.boxes p {
+    padding: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+img {
+    width:612px;
+    height: 408px;
+}
