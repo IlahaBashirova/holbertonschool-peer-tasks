@@ -35,3 +35,8 @@
 - - flex: auto; 1 1 0
 - - flex: 1; 1 1 auto
 - - flex: 0; 0 0 auto
+# Build a Flexbox Page
+- For building a webpage I would
+- - Put my header and footer in center only horizontally  using (justify -content)
+- - My main section texts in a row using ( flex-direction: row)
+- - My main section would be in a center of the page ( justify-content: center; align-items: center;)
