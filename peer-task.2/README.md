@@ -30,3 +30,8 @@
 - - flex-shrink:
 - - align-self:
 - - flex-basis:
+#  Flexbox Shorthands
+- Flex shorthand - flex-basis, flex-shrink, flex-grow
+- - flex: auto; 1 1 0
+- - flex: 1; 1 1 auto
+- - flex: 0; 0 0 auto
