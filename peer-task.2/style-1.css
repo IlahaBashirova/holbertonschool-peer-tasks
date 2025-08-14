@@ -1,0 +1,28 @@
+/* With float*/
+/* 
+.row {
+  overflow: auto; 
+}
+.col {
+  float: left;              
+  width: 33.333%;           
+  background: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;   
+}
+*/
+/* With Flexbox */
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
