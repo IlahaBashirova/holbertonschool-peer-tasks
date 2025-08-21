@@ -171,8 +171,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-    padding-bottom: 60px;
-    padding: 20px;
+    padding: 40px;
 }
 .services-section h2 {
     font-size: 40px;
