@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+/* Header */
+
+.header-section {
+    background-color: #CFD2C6;
+}
+.header-section .header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    h1 {
+        font-family: "Elsie";
+        font-size: 32px;
+        color: #36392D;
+    }
+    a {
+        text-decoration: none;
+        color: #36392D;
+        font-family: "Roboto", sans-serif;
+    }
+    .language-settings {
+        text-decoration: underline;
+    }
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-right {
+        display: flex;
+        gap: 40px;
+    }
+    .nav-items {
+        display: flex;
+        gap: 40px;
+    }
+}
+.menu-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
