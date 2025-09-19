@@ -3,87 +3,102 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .container {
-    max-width: 1760px;
+    max-width: 90%;
     margin: 0 auto;
 }
+
 /* Header */
 
 .header-section {
     background-color: #CFD2C6;
 }
+
 .header-section .header {
-    border: 1px solid red;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0;
+
     h1 {
         font-family: "Elsie";
         font-size: 32px;
         color: #36392D;
     }
+
     a {
         text-decoration: none;
         color: #36392D;
         font-family: "Roboto", sans-serif;
     }
+
     .language-settings {
-        border: 1px solid blue;
         text-decoration: underline;
     }
+
     .header-left {
-        border: 1px solid green;
         display: flex;
         align-items: center;
         gap: 40px;
     }
+
     .header-right {
-        border: 1px solid yellow;
         display: flex;
         gap: 40px;
     }
+
     .nav-items {
-        border: 1px solid black;
         display: flex;
         gap: 40px;
     }
 }
+
 .menu-icon {
     width: 40px;
     height: 40px;
 }
- /*Menu*/
-.menu-section {
+
+/*Menu*/
+.menu {
     background-color: #CFD2C6;
     padding: 80px 0;
-} 
-.menu-texts {
+}
+
+.menu-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
+
 .text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     max-width: 570px;
+
     p {
         text-align: center;
         line-height: 26px;
     }
+
     h1 {
         font-weight: bold;
         font-size: 64px;
         color: #36392D;
     }
 }
+
 .boxes {
     display: flex;
     justify-content: space-between;
-    gap:38px;
+    flex-wrap: wrap;
+    gap: 38px;
+
     button {
         background-color: #CFD2C6;
         border: 1px solid #9FA68C;
@@ -95,16 +110,20 @@
         align-items: center;
         cursor: pointer;
     }
+
     button:hover {
         background-color: #9FA68C;
         color: white;
     }
 
 }
+
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
+
     .card {
         display: flex;
         flex-direction: column;
@@ -112,9 +131,115 @@
         color: #36392D;
         gap: 16px;
     }
+
     h4 {
         font-weight: bold;
         font-size: 20px;
     }
 }
 
+/*Events*/
+.events {
+    background-color: #CFD2C6;
+}
+
+.images {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 24px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.images-h1 {
+    padding-bottom: 80px;
+    h1 {
+        padding: 80px 130px;
+        color: #36392D;
+        font-size: 64px;
+        font-weight: bold;
+    }
+}
+
+.image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.overlay:hover {
+    opacity: 1;
+    background-color: #9fa68cb0;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    transition:  0.5s ease-in;
+}
+
+/* Footer*/
+footer {
+    background-color: #B7BCA9;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 72px;
+    .navbar-footer {
+        display: flex;
+        gap: 40px;
+        a {
+            text-decoration: none;
+            color: #36392D;
+        }
+    }
+    h1 {
+        color: #36392D;
+    }
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input {
+            border: none;
+            border-bottom: 1px solid #36392D;
+            background-color: #B7BCA9;
+        }
+        label {
+            color: #36392D;
+        }
+    }
+}
+.footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-left: 110px;
+    padding-bottom: 70px;
+}
