@@ -6,6 +6,9 @@
 .container{
     margin-inline: 85px;
 }
+body {
+    background-color: black;
+}
 .section_header{
     background-color: black;
 }
@@ -106,6 +109,7 @@
     header {
         .navbar {
             padding: 10px;
+            gap: 10px;
         }
     }
     .container {
