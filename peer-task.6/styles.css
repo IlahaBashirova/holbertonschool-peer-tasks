@@ -12,9 +12,12 @@
 .navbar {
     background-color: #1B1B1B;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
     padding: 24px 95px;
+}
+.navbar .menu-icon {
 }
 .navbar a {
     color: rgba(255, 255, 255, 0.562);
@@ -22,6 +25,7 @@
 }
 .links {
     display: flex;
+    flex-wrap: wrap;
     gap: 70px;
 }
 .hero_section {
@@ -32,7 +36,7 @@
     justify-content: space-between;
     padding: 131px 100px;
 
-    gap: 100px;
+    
     .text-button {
         display: flex;
         flex-direction: column;
@@ -47,8 +51,82 @@
             max-width: 492px;
         }
         button {
+            background-color: #3F8E00;
+            border: 1px solid #3F8E00;
+            color: white;
             padding: 21px 64px;
             width: 300px;
+        }
+    }
+}
+.foot_section {
+    background-color: black;
+    .h1_buttons {
+        display:flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+        h1 {
+            color: white;
+        }
+
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        button {
+            border: 1px solid #1B1B1B;
+            background-color: black;
+            padding: 20px 40px;
+            color: rgba(255, 255, 255, 0.781);
+
+        }
+    }
+}
+@media (max-width: 998px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .hero_section .main_part {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+@media (max-width: 630px) {
+    .links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+    header {
+        .navbar {
+            padding: 10px;
+        }
+    }
+    .container {
+        margin: 0;
+    }
+    .main_part {
+        justify-content: center;
+        .image img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .hero_section .text-button{
+        h1 {
+            font-size: 32px;
+        }
+        button {
+            width: 100px;
+            display: flex;
+            justify-content: center;
+
         }
     }
 }
