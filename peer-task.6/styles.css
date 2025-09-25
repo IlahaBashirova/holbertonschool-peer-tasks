@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-inline: 85px;
+}
+.section_header{
+    background-color: black;
+}
+.navbar {
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 24px 95px;
+}
+.navbar a {
+    color: rgba(255, 255, 255, 0.562);
+    text-decoration: none;
+}
+.links {
+    display: flex;
+    gap: 70px;
+}
+.hero_section {
+    background-color: black;
+}
+.main_part {
+    display: flex;
+    justify-content: space-between;
+    padding: 131px 100px;
+
+    gap: 100px;
+    .text-button {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h1 {
+            color: white;
+            font-size: 44px;;
+        }
+        p {
+            color: white;
+            line-height: 24px;
+            max-width: 492px;
+        }
+        button {
+            padding: 21px 64px;
+            width: 300px;
+        }
+    }
+}
