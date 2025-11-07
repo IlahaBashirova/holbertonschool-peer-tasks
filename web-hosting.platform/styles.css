@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0F1528;
+    background: linear-gradient(90deg,rgba(15, 21, 40, 1) 0%, rgba(17, 26, 63, 1) 50%, rgba(19, 31, 88, 1) 100%);
+}
+
+.container {
+    margin: 0 131px;
+}
+.first-header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 40px;
+    padding: 30px 0;
+}
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    .email {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .number {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.support-help {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    .support {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .help {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.second-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283156;
+    padding: 17px 25px;
+    border-radius: 5px;
+}
+.navigation {
+    display: flex;
+    gap: 31px;
+    align-items: center;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.login-sign {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button {
+        background-color: #CF088C;
+        color: white;
+        height: 40px;
+        width: 90px;
+        border: #CF088C;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+}
+
+.image-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 56px 0;
+}
+.hero-text {
+    max-width: 804px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    h1 {
+        color:white;
+        font-size: 40px;
+    }
+    p {
+        color: white;
+        font-size: 18px;
+    }
+}
+.div-button {
+    display: flex;
+    gap: 15px;;
+    .try {
+        width:188px;
+        height: 48px;
+        border-radius: 25px;
+        background-color: #CF088C;
+        color: white;
+        border-color: #CF088C;
+        font-size: 16px;
+    }
+    .choose {
+        width:188px;
+        height: 48px;
+        border-radius: 25px;
+        background-color:#10162C;
+        border-color: white;
+        color: white;
+        font-size: 16px;
+    }
+}
