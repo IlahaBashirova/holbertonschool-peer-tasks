@@ -8,7 +8,7 @@ body {
     background: linear-gradient(90deg,rgba(15, 21, 40, 1) 0%, rgba(17, 26, 63, 1) 50%, rgba(19, 31, 88, 1) 100%);
 }
 
-h1,h3,p,a,button,span {
+h1,h3,h4,p,a,button,span,li {
     font-family: "Inter", sans-serif;
 }
 .container {
@@ -365,3 +365,357 @@ h1,h3,p,a,button,span {
         }
     }
 }
+
+/* Pricing-section */
+
+.pricing-plans {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:60px;  
+}
+
+.pricing-text {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        p {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        span {
+            color: rgb(207, 204, 204);
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+    .button-select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 248px;
+        height: 60px;
+        border-radius: 50px;
+        button {
+            width: 119px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+        }
+        .monthly {
+            background-color: #CF088C;
+            color: white;
+        }
+        .yearly {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        padding: 40px 30px;
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            .currency {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                p {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+                
+            }
+            .save-price {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1px;
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .card-title {
+            color: rgb(163, 161, 161);
+            font-size: 22px;
+        }
+        p {
+            color: white;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 26px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: rgb(251, 250, 250);
+                font-size: 16px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+.pricing-cards > :first-child, .pricing-cards > :last-child {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid rgb(148, 146, 146);
+    button {
+        cursor: pointer;
+        align-self: center;
+        background: linear-gradient(
+            200deg,
+            #D4088C 0%,
+            #CC088C 4%,
+            #85078A 46%,
+            #590689 76%,
+            #480689 91%
+        );
+        width:248px;
+        height: 60px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    .save-price span {
+        color: #D4088C;
+    }
+}
+
+.second-card {
+    background: linear-gradient(
+            260deg,
+            #D4088C 0%,
+            #CC088C 4%,
+            #85078A 46%,
+            #590689 76%,
+            #480689 91%
+        );
+    border-radius: 30px;
+    button {
+        cursor: pointer;
+        align-self: center;
+        background: linear-gradient(
+            180deg,
+            #6EE8FC 0%,
+            #6AE2FB 16%,
+            #5ED1F7 37%,
+            #4BB5F1 61%,
+            #308EE8 87%
+        );
+        width:248px;
+        height: 60px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    .save-price span {
+        color: #6EE8FC;
+    }
+}
+
+@media (max-width: 1073px) {
+    .pricing-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Why-choose-section */
+
+.why-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.why-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        color: rgb(207, 204, 204);
+        max-width: 979px;
+        text-align: center;
+    }
+}
+
+.reason-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .card {
+        position: relative;
+        background: linear-gradient(
+            260deg,
+            #D4088C 0%,
+            #CC088C 4%,
+            #85078A 46%,
+            #590689 76%,
+            #480689 91%
+        );
+        display: flex;
+        flex-direction: column;
+        padding: 60px 35px;
+        gap: 15px;
+        width: 430px;
+        height: 240px;
+        border-radius: 20px;
+        h4 {
+            color: white;
+            font-size: 24px;
+            font-weight: 550;
+        }
+        p {
+            color: white;
+            line-height: 22px;
+            font-size: 16px;
+            font-weight: 200;
+        }
+    }
+    .image-icon {
+        position: absolute;
+        top: -30px;
+        left: 35px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+/* Migration section */
+
+.migration-issue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+.issue-text-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        color: rgb(207, 204, 204);
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
+.main-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 556px;
+        h4 {
+            color: white;
+            font-size: 32px;
+            font-weight: 500;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 20;
+        }
+        
+    }
+}
+
+.text-button {
+    display : flex;
+    flex-direction: column;
+    gap: 35px;
+    button {
+        width: 192px;
+        height: 59px;
+        border-radius: 50px;
+         background: linear-gradient(
+            260deg,
+            #D4088C 0%,
+            #CC088C 4%,
+            #85078A 46%,
+            #590689 76%,
+            #480689 91%
+        );
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.migration-image {
+    max-width: auto;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        overflow: cover;
+    }
+}
+
