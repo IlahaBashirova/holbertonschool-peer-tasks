@@ -767,6 +767,13 @@ h1,h3,h4,p,a,button,span,li {
     }
 }
 
+@media (max-width: 520px) {
+    .main-part {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
 /* Clients Section */
 
 .comments {
@@ -1045,7 +1052,7 @@ h1,h3,h4,p,a,button,span,li {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
     .form-text {
         flex-direction: column;
         gap: 20px;
