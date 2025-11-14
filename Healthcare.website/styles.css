@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-p,b,a, h2 {
+p,b,a, h2, h6, button{
     font-family: sans-serif;
 }
 .container {
@@ -154,29 +154,160 @@ p,b,a, h2 {
 }
 
 /* Top-rated */
-
+.top-rated-section {
+    margin: 60px 0;
+}
 .rated-text-cards {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    .text h2 {
+        color:#10217D
+    }
     .cards {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
     }
 }
 
 .doctor-card {
+    border: 1px solid #DBDDE0;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    height: 328px;
+}
+.doctor-card .card-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
     gap: 20px;
-    border: 1px solid #DBDDE0;
     .doctor-image img {
-        width: 100%;
-        height: 100%;
+        width: 170px;
+        height: 159px;
+
     }
     .description {
         display: flex;
         flex-direction: column;
         gap: 4px;
+        p {
+            color: #6C87AE;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    button {
+        width: 170px;
+        height: 44px;
+        background-color: white;
+        color: #10217D;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #10217D;
+        border-radius: 4px;
     }
 }
+
+/* Consult-for-section */
+
+.consult-text-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 0;
+    h2 {
+        color: #10217D;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+.consult-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.consult-cards .part-card {
+    width: 190px;
+    height: 88px;
+    background-color: #1ba8b553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    h6 {
+        color: #527C88;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+
+/* Shop-section */
+
+.shop-section {
+    background: url(imgs/purple-bcg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-text-imgs {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 100px;
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h2 {
+            color:#10217D;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p {
+            color:#10217D;
+            font-size: 14px;
+            font-weight: 300;
+            max-width: 480px;
+            text-align: center;
+        }
+    }
+    .imgs {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            h6 {
+                color:#527C88;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
