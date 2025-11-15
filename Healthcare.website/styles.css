@@ -43,6 +43,11 @@ p,b,a, h2, h6, h4, button{
         height: 3px;
     }
 }
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .consult {
     display: flex;
     flex-direction: row;
@@ -148,8 +153,38 @@ p,b,a, h2, h6, h4, button{
         gap: 10px;
         width: auto;
     }
+    .selection {
+        flex-direction: column;
+        gap: 10px;
+    }
     .hero-class {
         height: 90vh;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin-inline: 20px;
+    }
+    .form-sections {
+        gap: 20px;
+    }
+    .selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 370px) {
+    .consult {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-sections .text {
+        width: 200px;
     }
 }
 
